@@ -5,7 +5,7 @@ EXTENSION = pg_execplan
 EXTVERSION = 0.1
 PGFILEDESC = "pg_execplan"
 MODULES = pg_execplan
-OBJS = pg_execplan.o $(WIN32RES)
+OBJS = pg_execplan.o plan_utils.o $(WIN32RES)
 
 PG_CPPFLAGS = -I$(libpq_srcdir)
 SHLIB_LINK_INTERNAL = $(libpq)
